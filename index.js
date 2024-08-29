@@ -1,30 +1,26 @@
-import {NativeModules} from 'react-native';
+import { NativeModules } from "react-native";
 
-var RNBroadCast = {
-    sendBroadCast: function(action,json) {
-        NativeModules.RNBroadCast.sendEvent(action,JSON.stringify(json));
-    },
-    sync: function () {
-        NativeModules.RNBroadCast.receiveSystemEvent(true);
-    },
-    unSync: function () {
-        NativeModules.RNBroadCast.receiveSystemEvent(false);
-    },
-    on: function (action) {
-        if (action == null)
-            return null
-        else
-            NativeModules.RNBroadCast.receiveEvent(action);
-    },
-    remove: function (action) {
-        if (action == null)
-            return null
-        else
-            NativeModules.RNBroadCast.removeEvent(action);
-    },
-    removeAll: function () {
-            NativeModules.RNBroadCast.removeAllEvent();
-    }
+var RroadCast = {
+  sendBroadCast: function (action, json) {
+    NativeModules.RroadCast.sendEvent(action, JSON.stringify(json));
+  },
+  sync: function () {
+    NativeModules.RroadCast.receiveSystemEvent(true);
+  },
+  unSync: function () {
+    NativeModules.RroadCast.receiveSystemEvent(false);
+  },
+  on: function (action) {
+    if (action == null) return null;
+    else NativeModules.RroadCast.receiveEvent(action);
+  },
+  remove: function (action) {
+    if (action == null) return null;
+    else NativeModules.RroadCast.removeEvent(action);
+  },
+  removeAll: function () {
+    NativeModules.RroadCast.removeAllEvent();
+  },
 };
 
-export default RNBroadCast;
+export default RroadCast;
