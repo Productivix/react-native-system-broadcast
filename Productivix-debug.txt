@@ -1,0 +1,2 @@
+28/08/24: error de link dans index : corrected
+react-native-system-broadcast/android/src/main/java/top/litop/RroadCast/RroadCastModule.java uses or overrides a deprecated API.
